@@ -21,7 +21,7 @@ function Signup() {
       password: data.password,
     };
     await axios
-      .post("https://harkirat-100x-dev.vercel.app/user/signup", userInfo)
+      .post("https://book-store-back.vercel.app/user/signup", userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {

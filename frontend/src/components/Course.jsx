@@ -8,7 +8,7 @@ const Course = () => {
   useEffect(() => {
     const getBook = async()=> {
     try {
-     const res=  await axios.get("https://harkirat-100x-dev.vercel.app/book");
+     const res=  await axios.get("https://book-store-back.vercel.app/book");
       setBook(res.data);
     }
     catch (err){
